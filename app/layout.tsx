@@ -1,10 +1,11 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { AiChat } from '@/components/AiChat';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,9 +32,10 @@ export default function RootLayout({
             <Header />
             <div className="flex-1 flex">
               <Sidebar />
-              <main className="flex-1 p-6 overflow-auto">{children}</main>
+              <main className="flex-1 p-5">{children}</main>
             </div>
           </div>
+          <AiChat />
           <Toaster />
         </ThemeProvider>
       </body>

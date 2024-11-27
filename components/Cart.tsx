@@ -33,7 +33,7 @@ export function Cart() {
               <span className="font-semibold">Total</span>
               <span className="font-semibold">R$ 0,00</span>
             </div>
-            <Button className="w-full">Finalizar Compra</Button>
+            <Button className="w-full mb-4">Finalizar Compra</Button>
           </div>
         </div>
       </SheetContent>
